@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'css/responsivo.css') }}">
+
+        <title>Atendimento automatico</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="chat">
+                <div class="cabecalho">
+                    <div style="display: flex;" class="start">
+                        <label style="font-size: 30px; margin-top: 20px; margin-left: 20px;" for="">Imperio Hookah</label>
+                    </div>
+            
+                </div>
+                <div class="chat-menssagens">
+                    
+                    <div class="msg">
+                        Olá, muito bem vindo, faça seu pedido de forma facil e rapida aqui no atendimento automatico!!!<br><br>Siga o cardapio a baixo
+                        <br><br>
+                        Digite Cardapio para receber o cardapio
+                    </div>
+                </div>
+                <input class="input-enviar-mensagem" placeholder="Enviar mensagem" type="text">
+            </div>
+        <div>
+
+        <script type="module" src="{{ url_for('static', filename = 'js/index.js') }}"></script>
+
+    </body>
+</html>

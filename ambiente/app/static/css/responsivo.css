@@ -1,0 +1,5 @@
+@media (max-width: 900px) {
+    .btn-cabecalho{
+        border-bottom: 2px solid rgb(156, 58, 58);
+    }
+}

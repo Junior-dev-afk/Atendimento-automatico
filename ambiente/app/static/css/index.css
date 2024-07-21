@@ -1,0 +1,125 @@
+:root{
+    --initial-color: rgb(255, 0, 0);
+    --secundary-color: rgb(128, 29, 29);
+}
+
+body{
+    background-color: rgb(150, 150, 150);
+    width: 100vw;
+    height: 100dvh;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+*{
+    user-select: none;
+}
+
+img{
+    pointer-events: none;
+}
+
+.container{
+    width: 100%;
+    height: 100dvh;
+}
+
+.chat{
+    width: 100%;
+    height: 100dvh;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(24, 24, 24);
+    position: static;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+.btn-cabecalho{
+    width: auto;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.btn-cabecalho:hover{
+    border-bottom: 2px red solid;
+}
+
+.chat-menssagens{
+    width: 100%;
+    height: calc(100dvh - 70px - 40px);
+    background-color: rgb(73, 73, 73);
+    position: absolute;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.input-enviar-mensagem{
+    width: calc(100% - 40px);
+    height: 40px;
+    border: none;
+    padding: 0px;
+    background-color: rgb(49, 49, 49);
+    color: aliceblue;
+    padding-inline: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.input-enviar-mensagem:focus{
+    border: none;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(94, 94, 94);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.msg{
+    width: auto;
+    max-width: 60%;
+    margin-left: 20px;
+    margin-block: 5px;
+    height: auto;
+    padding: 4px;
+    padding-inline: 7px;
+    background-color: rgb(56, 56, 56);
+    color: rgb(165, 165, 165);
+    border-radius: 5px;
+    word-wrap: break-word;
+    position: relative;
+    align-self: flex-start;
+}
+
+.msg-cliente{
+    width: auto;
+    max-width: 60%;
+    margin-right: 20px;
+    align-self: flex-end;
+    margin-block: 5px;
+    height: auto;
+    padding: 4px;
+    padding-inline: 7px;
+    background-color: rgb(56, 56, 56);
+    color: rgb(165, 165, 165);
+    border-radius: 5px;
+    word-wrap: break-word;
+    position: static;
+}
